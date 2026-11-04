@@ -1,11 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>init</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Howard Johnson — DevOps / Operations Engineer</title>
+<meta name="description" content="Howard Johnson, DevOps / Operations Engineer in Kingston, Jamaica. Azure, Kubernetes, GitOps, observability and full-stack development.">
+<meta property="og:title" content="Howard Johnson — DevOps / Operations Engineer">
+<meta property="og:description" content="Azure, Kubernetes, GitOps, observability and full-stack development. Kingston, Jamaica.">
+<meta property="og:image" content="https://hbpanda.github.io/headshot.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f6f8fa; --card: #ffffff; --ink: #1d2329; --muted: #59636c; --line: #dfe4e8;
+  --accent: #1b5e8c; --accent-soft: #e8f1f8;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0f1419; --card: #161d24; --ink: #e6ebef; --muted: #9aa6b1; --line: #26313b;
+          --accent: #5fa8dc; --accent-soft: #17293a; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 880px; margin: 0 auto; padding: 48px 20px 64px; }
+.hero { display: flex; gap: 28px; align-items: center; margin-bottom: 36px; }
+.hero img { width: 128px; height: 128px; border-radius: 50%; object-fit: cover; border: 3px solid var(--card); box-shadow: 0 2px 12px rgba(0,0,0,.12); flex-shrink: 0; }
+h1 { font-size: 2.3rem; line-height: 1.15; margin: 0; letter-spacing: -.5px; }
+.role { color: var(--accent); font-weight: 600; font-size: 1.1rem; margin: 4px 0 10px; }
+.contact { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .93rem; color: var(--muted); }
+.actions { margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap; }
+.btn { display: inline-block; padding: 8px 16px; border-radius: 8px; font-weight: 600; font-size: .92rem; }
+.btn.primary { background: var(--accent); color: #fff; }
+.btn.ghost { border: 1px solid var(--line); color: var(--ink); background: var(--card); }
+.btn:hover { text-decoration: none; opacity: .9; }
+section { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 22px 26px; margin-bottom: 18px; }
+h2 { font-size: .82rem; text-transform: uppercase; letter-spacing: 1.4px; color: var(--accent); margin: 0 0 12px; }
+h3 { font-size: 1.02rem; margin: 0; }
+.job-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline; }
+.meta { color: var(--muted); font-size: .9rem; }
+ul { margin: 8px 0 0; padding-left: 20px; }
+li { margin-bottom: 6px; }
+li::marker { color: var(--accent); }
+.skills { display: grid; grid-template-columns: 200px 1fr; gap: 8px 18px; margin: 0; }
+.skills dt { font-weight: 600; }
+.skills dd { margin: 0; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tags span { background: var(--accent-soft); color: var(--ink); border-radius: 6px; padding: 2px 9px; font-size: .86rem; }
+.sub { margin-top: 18px; }
+footer { text-align: center; color: var(--muted); font-size: .85rem; margin-top: 28px; }
+@media (max-width: 640px) {
+  .wrap { padding: 28px 16px 48px; }
+  .hero { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .hero img { width: 104px; height: 104px; }
+  h1 { font-size: 1.9rem; }
+  section { padding: 18px; }
+  .skills { grid-template-columns: 1fr; gap: 2px; }
+  .skills dd { margin-bottom: 10px; }
+}
+@media print { .actions, footer { display: none; } section { border: none; padding: 0; } body { background: #fff; } }
+</style>
 </head>
 <body>
-    <h1>Hello World</h1>
+<div class="wrap">
+
+  <header class="hero">
+    <img src="headshot.jpg" alt="Howard Johnson">
+    <div>
+      <h1>Howard Johnson</h1>
+      <div class="role">DevOps / Operations Engineer</div>
+      <div class="contact">
+        <span>Kingston, Jamaica</span>
+        <a href="tel:+18765671320">876-567-1320</a>
+        <a href="mailto:hjohnson.enquiries@gmail.com">hjohnson.enquiries@gmail.com</a>
+        <a href="https://github.com/HBPanda">github.com/HBPanda</a>
+      </div>
+      <div class="actions">
+        <a class="btn primary" href="Howard_Johnson_Resume.pdf" download>Download resume (PDF)</a>
+        <a class="btn ghost" href="mailto:hjohnson.enquiries@gmail.com">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p>DevOps and operations engineer who builds, ships and runs containerized platforms end to end. I work across Azure and Kubernetes (AKS, k3s) along with Prometheus/Grafana observability. I bring a full-stack development background in C#/C++/.NET, PHP/Laravel, Python and React, and run an independent consulting practice delivering web projects.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Cloud &amp; containers</dt><dd class="tags"><span>Azure AKS</span><span>Azure App Configuration</span><span>Kubernetes</span><span>k3s</span><span>Docker</span><span>Docker Compose</span></dd>
+      <dt>Observability</dt><dd class="tags"><span>Prometheus</span><span>Grafana</span><span>Blackbox Exporter</span><span>Webhook alerting</span></dd>
+      <dt>Systems &amp; networking</dt><dd class="tags"><span>Linux (Ubuntu, RHEL)</span><span>Caddy</span><span>TLS/PKI troubleshooting</span></dd>
+      <dt>Scripting &amp; languages</dt><dd class="tags"><span>Bash</span><span>PowerShell</span><span>Python</span><span>TypeScript/JavaScript</span><span>C# .NET</span><span>PHP</span><span>SQL</span></dd>
+      <dt>Frameworks &amp; data</dt><dd class="tags"><span>FastAPI</span><span>React</span><span>Vue.js</span><span>Laravel</span><span>Spring Boot config</span><span>SQL Server</span><span>SQLite</span></dd>
+      <dt>AI &amp; automation</dt><dd class="tags"><span>LangGraph</span><span>Agentic workflows</span><span>Automated test suites</span></dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="job-head"><h3>DevOps / Operations Engineer — Digicel Group</h3><span class="meta">Nov 2020 – Present · Kingston, Jamaica</span></div>
+    <ul>
+      <li>Worked on a WireMock sidecar injection system on AKS, capturing microservice request/response chains with zero application code changes.</li>
+      <li>Contributed to configuration management strategy for Spring Boot services on Kubernetes: XML hardening, schema validation, and a strangler-fig migration to database-backed config on Azure App Configuration.</li>
+      <li>Delivered site monitoring for a RHEL 7.9 environment behind TLS inspection, packaging Prometheus, Grafana and Blackbox Exporter into a single containerized Alpine image.</li>
+      <li>Wrote a PowerShell connectivity testing toolkit with INI/JSON configuration, parallel probing and structured output for repeatable network checks.</li>
+    </ul>
+    <div class="sub">
+      <h3>Earlier roles</h3>
+      <ul>
+        <li>Customer Service Representative Assistant — Institute of Chartered Accountants of Jamaica, Kingston <span class="meta">(Aug–Sep 2017)</span></li>
+        <li>Help Desk Assistant / Bookkeeper — Electoral Office of Jamaica, Portmore <span class="meta">(Aug–Sep 2016)</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Selected projects</h2>
+    <ul>
+      <li><strong>Asset forecasting service</strong> (<a href="https://forecast.nautelos.dev">forecast.nautelos.dev</a>) — FastAPI and React multi-asset price forecasting API with FRED macro data, economic calendar integration, Discord alerts, a permutation-tested backtester and a risk/position-sizing module.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Websites contributed to</h2>
+    <ul>
+      <li><strong>Rehoboth Family Services</strong> — <a href="https://rehobothfamilyservices.org">rehobothfamilyservices.org</a> · organisation website</li>
+      <li><strong>S&amp;G Global Pay</strong> — <a href="https://staging.sgpayjamaica.com">staging.sgpayjamaica.com</a> · payments platform (staging environment)</li>
+      <li><strong>Obsidian Ridge</strong> — <a href="https://obsidianridge.netlify.app">obsidianridge.netlify.app</a> · community site for a RedM roleplay server, with rules, jurisdiction map, roadmap and downloads</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education &amp; certifications</h2>
+    <ul>
+      <li><strong>BSc Computing and Information Technology (Computer Science)</strong> — University of Technology, Jamaica · In progress, expected 2027</li>
+      <li><strong>Microsoft Azure track</strong> — AZ-900 Azure Fundamentals (in progress) · AZ-104 Azure Administrator (pending) · AZ-400 DevOps Engineer Expert (pending)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Leadership &amp; interests</h2>
+    <ul>
+      <li><strong>Executive Project Manager</strong>, SAPNA (UTech) — May 2018 – 2019; ran agile delivery for student-led software projects.</li>
+      <li><strong>Recruitment Advisor</strong>, SAPNA (UTech) — Sep 2018 – 2020.</li>
+      <li><strong>Interests</strong> — PC building, home networking and home lab hardware, chess, golf.</li>
+    </ul>
+  </section>
+
+  <footer>© 2026 Howard Johnson</footer>
+</div>
 </body>
 </html>
